@@ -22,6 +22,7 @@
     <li>Backend Relationship.</li>
     <li>Fully CRUD available to each and every section.</li>
     <li>Fully responsive for different screen sizes.</li>
+    <li>Lazy loading for app optimization.</li>
     <li>Drag Drop Feature</li>
 </ol>
 
