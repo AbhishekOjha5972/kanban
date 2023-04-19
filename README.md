@@ -3,6 +3,8 @@
 <bdi>Description:  </bdi><i>A Kanban board is a visual tool used to manage and track work in progress (WIP) in a project or process. It is based on the principles of the Kanban methodology, which emphasizes continuous delivery and improvement, and aims to increase efficiency and productivity by limiting the amount of work that can be in progress at any given time.</i>
 </p>
 
+<h2>Backend Repo link : <a href="https://github.com/AbhishekOjha5972/kanban_backend" target="_blank">Kanban Backend</a></h2>
+
 # <h2>🌀 Project Type</h2>:
 <ul>
     <li>Full Stack Project</li>
