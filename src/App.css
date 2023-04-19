@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* width: 50%; */
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+form > h1{
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+}
+.std-label-input , .std-label-select{
+  display: flex;
+  flex-direction: column;
+}
+.std-label{
+  padding: 5px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.std-input ,.std-select{
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.std-btn{
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+  background-color: #3dbfff;
+  color: white;
+}
+.std-btn:not(:disabled):active{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(.9);
+}
+.std-btn:disabled{
+  cursor: not-allowed;
+}
+a{
+  text-decoration: none;
+}
+table thead tr th{
+      text-align: center;
+      padding: 10px;
+      background-color: cyan;
+}
+
+table tbody tr td{
+  text-align: center;
+  padding: 10px;
+}
+bdi{
+  font-weight: 600;
+  font-size: 20px;
+}
+.pagination{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 10px 20px;
+  justify-content: center;
+  padding: 5px;
+  backdrop-filter: blur(3px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.std-current{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 255, 0.356);
+  height: 50px;
+  width: 50px;
+}
+.std-filter-sort-div{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 8px;
+}
+.std-search{
+  display: flex;
+  gap: 0px 10px;
+}
+
+
+.std-card-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between !important;
+  gap: 20px;
+}
+.std-card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding:20px;
+  border-radius: 10px;
+  /* display: flex; */
+}
+.std-heading{
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration:underline;
+  padding: 5px;
+}
+.std-card-image{
+  width: 100%;
+  height: 300px;
+}
+.std-card-image > img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.std-card-details > p{
+color:gray;
+font-weight: 600;
+font-size: 18px;
+}
+.std-card-btn{
+  display: block;
+  margin:auto;
+  padding: 5px 10px;
+  background-color: rgb(196, 192, 192);
+  border-radius: 5px;
+  color: rgb(29,29,29);
+  font-weight: 600;
+}
+/* bdi{
+  padding: 10px;
+  color: rgb(29,29,29);
+  font-weight: 700;
+  font-size: 22px;
+} */

@@ -1,0 +1,412 @@
+:root{
+  --middleScreenFontSizeHB:14px;
+  --middleScreenFontSizeT:12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+bdi {
+  padding: 0px 5px 0px 0px;
+}
+
+.std-heading-component {
+  width: 100%;
+  padding: 10px;
+  color: gray;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+}
+
+.navbar>div {
+  display: flex;
+}
+
+.navbar>div:nth-child(1) {
+  width: 20%;
+  justify-content: start;
+  gap: 5px;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.navbar>div:nth-child(2) {
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* side bar css  */
+.data-container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  gap: 20px;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 20px 8px 0;
+}
+
+.sidebar>button {
+  border-radius: 0 20px 20px 0 !important;
+  justify-content: left;
+}
+
+button:active {
+  background-color: #635fc7 !important;
+}
+
+.task-container {
+  display: grid;
+  width: inherit;
+  height: 100vh;
+  background-color: #f4f7fd;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px;
+}
+
+.task-container>div {
+  padding: 8px 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* create board css */
+.createBoard {
+  display: flex;
+  position: relative;
+  padding-right: 20px;
+  border-radius: 0 20px 20px 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+}
+
+.createBoard>input {
+  padding-left: 15px;
+  height: 40px;
+
+}
+
+.createBoard>input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.createBoard>div {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+.sidebar_boards_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 20px 20px 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding-right: 10px;
+}
+
+.sidebar_boards_button>p {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar_boards_button>div {
+  display: none;
+  gap: 5px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.sidebar_boards_button:hover>div {
+  display: flex;
+}
+
+.sidebar_boards_button:hover>div>svg {
+  cursor: pointer;
+}
+
+
+
+.sidebar_board_selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 20px 20px 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #9684ca;
+  gap: 20px;
+
+}
+
+.sidebar_board_selected>div:nth-child(1) {
+  display: flex;
+  align-items: center;
+
+}
+
+.sidebar_board_selected>div:nth-child(1)>input {
+  border: none;
+  outline: none;
+  background-color: #9684ca;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+}
+
+.sidebar_board_selected>div:nth-child(1)>input::placeholder {
+  color: rgb(170, 170, 170);
+  font-size: 18px;
+}
+
+.sidebar_board_selected>div:nth-child(2) {
+  font-size: 22px;
+}
+
+
+
+/* STD - Task Shower Css */
+.subtask-container {
+  text-align: left !important;
+  display: flex !important;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtask-child-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: #f4f7fd;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+
+.subtask-child-container>div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: inherit;
+
+}
+
+.subtask-child-container>div:nth-child(2) {
+  display: flex;
+  width: 10%;
+  align-items: center;
+  gap: 10px;
+}
+
+.subtask-child-edit-and-delete-css {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background-color: #f4f7fd;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.subtask-child-edit-and-delete-css>div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: inherit;
+}
+
+.subtask-child-edit-and-delete-css>div:nth-child(1)>input:nth-child(2) {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.subtask-child-edit-and-delete-css>div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.input-type-checked-css {
+  text-decoration: line-through !important;
+  color: gray;
+  opacity: .5;
+}
+
+.input-type-unchecked-css {
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+}
+
+.subtask-header {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtask-header-crud-css {
+  position: absolute;
+  right: 6%;
+  top: 15%;
+  /* display: flex; */
+}
+
+.subtask-header-crud-css>div>span {
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  padding: 5px 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.subtask-header>div:nth-child(2)>div>input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid green;
+}
+
+.subtask-header-task-updater-css>div:nth-child(2) {
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+.subtask-header-task-updater-css>div:nth-child(2)>input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid green;
+  width: 100%;
+}
+
+.skeleton-board-option {
+  padding-left: 10% !important;
+  border-radius: 0px 30px 30px 0px !important;
+}
+
+.skeleton-board-option>div:nth-child(2) {
+  border-radius: 0px 20px 20px 0px !important;
+  width: 80% !important;
+}
+
+.task-loading-css {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.burger-icon{
+  display: none;
+}
+.task-child-dragOver-css{
+  background-color:#3dbeff3a
+}
+.task-child-isDragging-css{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width:768px) {
+  .navbar {
+    justify-content: space-between !important;
+  }
+  .navbar > div{
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar>div:nth-child(2)>p{
+    display: none;
+  }
+  .navbar > div:nth-child(2) > button{
+    height: 25px !important;
+    padding: 5px;
+    width: fit-content !important;
+    font-size: var(--middleScreenFontSizeHB);
+  }
+
+  .sidebar {
+    width: 100%;
+    position: absolute;
+    flex-direction: row;
+    overflow-x: auto;
+    max-height: 100px;
+    align-items: center;
+    top: 50px;
+    padding: 0px;
+  }
+  .sidebar > div{
+    width: fit-content;
+    font-size: var(--middleScreenFontSizeT);
+  }
+  .sidebar_boards_button > div{
+    display: flex;
+  }
+  .sidebar_board_selected > div:nth-child(1){
+    width: 200px !important;
+    border: 2px solid yellow;
+    padding: 0px !important;
+  }
+
+  .task-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    height: fit-content;
+    margin-top: 100px;
+  }
+  .task-container > div{
+    height: fit-content;
+  }
+  .task-container > div > div > p:nth-child(1){
+    font-size: var(--middleScreenFontSizeHB) !important;
+  }
+  .task-container > div > div > p:nth-child(2){
+    font-size: var(--middleScreenFontSizeT) !important;
+  }
+  .board-Loading{
+    flex-direction: row;
+  }
+}
