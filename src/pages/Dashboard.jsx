@@ -34,7 +34,7 @@ import { BsGrid1X2Fill } from "react-icons/bs";
 import { FcBarChart } from "react-icons/fc";
 import { Suspense } from 'react';
 import "../styles.css";
-const homePageImage =  "../../public/homeSvg.svg"
+const homePageImage = "../../public/homeSvg.svg"
 
 import { DragDropContext, Droppable } from "react-beautiful-dnd"
 
@@ -253,17 +253,17 @@ const Dashboard = () => {
                               </Button>
                          </Box>
                          {
-                              !boardData.length?
-                                   <Box 
-                                   width="100%"
-                                   display="flex"
-                                   justifyContent="center"
-                                   alignItems="center"
-                                   flexDirection="column"
-                                   gap="10px"
-                                   height="100vh"
+                              !boardData.length ?
+                                   <Box
+                                        width="100%"
+                                        display="flex"
+                                        justifyContent="center"
+                                        alignItems="center"
+                                        flexDirection="column"
+                                        gap="10px"
+                                        height="100vh"
                                    >
-                                        <Image src='/homeSvg.svg' h="60%"/>
+                                        <Image src='/homeSvg.svg' h="60%" />
                                         <Heading textAlign="center">For seeing data click on any board if you have.</Heading>
                                    </Box>
                                    :
